@@ -27,3 +27,13 @@ hs_err_pid*
 ### Maven template
 target/
 
+### NetBeans template
+**/nbproject/private/
+**/nbproject/Makefile-*.mk
+**/nbproject/Package-*.bash
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
