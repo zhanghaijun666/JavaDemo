@@ -10,7 +10,7 @@ public class Person {
     @Field(value = "id")
     private String id;
 
-    @Field(value = "title")
+    @Field(value = "name")
     private String name;
 
     @Field(value = "description")
