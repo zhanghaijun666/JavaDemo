@@ -30,10 +30,10 @@ public class ZooKeeperProSync implements Watcher {
         //等待zk连接成功的通知
         connectedSemaphore.await();
         if (zk.exists(path, true) == null) {
-        // 创建一个目录节点
+            // 创建一个目录节点
             zk.create(path, "this is a znode".getBytes(), Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
         }
-            //获取path目录节点的配置数据，并注册默认的监听器
+        //获取path目录节点的配置数据，并注册默认的监听器
         System.out.println(new String(zk.getData(path, true, stat)));
 
         Thread.sleep(Integer.MAX_VALUE);
